@@ -14,5 +14,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>parent</module>
+        <module>runner</module>
+        <module>blog</module>
+        <module>blog</module>
     </modules>
 </project>
