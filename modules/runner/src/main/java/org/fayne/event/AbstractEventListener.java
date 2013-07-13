@@ -1,20 +1,20 @@
 package org.fayne.event;
 
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Abstract event listener (Observer).
  *
  * @param <T> the type of event data
- * @author <a href="http://88250.b3log.org">Liang Ding</a>
- * @version 1.0.0.4, Jun 23, 2011
  */
 public abstract class AbstractEventListener<T> {
 
     /**
      * Logger.
      */
-  //  private static final Logger LOGGER = Logger.getLogger(AbstractEventListener.class.getName());
+    final static Logger logger = LoggerFactory.getLogger(AbstractEventListener.class.getClass());
 
     /**
      * Gets the event type of this listener could handle.
@@ -28,7 +28,7 @@ public abstract class AbstractEventListener<T> {
      * queue and event.
      *
      * @param eventQueue the specified event
-     * @param event the specified event
+     * @param event      the specified event
      * @throws EventException event exception
      * @see Event
      */
@@ -39,7 +39,7 @@ public abstract class AbstractEventListener<T> {
         try {
             action(eventObject);
         } catch (final Exception e) {
-          //  LOGGER.log(Level.WARN, "Event perform failed", e);
+            logger.warn("Event perform failed:{}", e);
         } finally { // remove event from event queue
             if (eventQueue instanceof SynchronizedEventQueue) {
                 final SynchronizedEventQueue synchronizedEventQueue = (SynchronizedEventQueue) eventQueue;

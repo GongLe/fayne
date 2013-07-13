@@ -7,7 +7,7 @@
     <name>fayne :: app</name>
     <packaging>pom</packaging>
 
-    <description>fayne web app </description>
+    <description>fayne-root</description>
     <developers>
         <developer>
             <id>Gongle</id>
