@@ -15,5 +15,8 @@
             <email>skygongle@gmail.com</email>
         </developer>
     </developers>
+    <modules>
+        <module>modules</module>
+    </modules>
 
 </project>

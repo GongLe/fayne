@@ -9,7 +9,7 @@
         <relativePath>../parent/</relativePath>
     </parent>
 
-    <artifactId>runner</artifactId>
+    <artifactId>fayne-runner</artifactId>
     <packaging>jar</packaging>
     <name>fayne :: Module :: Runner</name>
 
