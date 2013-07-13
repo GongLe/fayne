@@ -1,7 +1,6 @@
 
 package org.fayne.event;
 
-
 import com.google.common.collect.Maps;
 import org.junit.Test;
 
@@ -18,6 +17,7 @@ public final class EventManagerTestCase {
      */
     @Test
     public void test() throws Exception {
+        System.out.println("===事件驱动(观察者模式)测试用例====");
         final EventManager eventManager = EventManager.getInstance();
         final TestEventListener1 testEventListener1 = new TestEventListener1();
         eventManager.registerListener(testEventListener1);
@@ -45,13 +45,12 @@ public final class EventManagerTestCase {
             throw new EventException(e);
         }
         System.out.println("Done in main thread");
+
     }
 
     /**
      * Test event listener 1.
      *
-     * @author <a href="http://88250.b3log.org">Liang Ding</a>
-     * @version 1.0.0.1, Aug 27, 2010
      */
     private final class TestEventListener1 extends AbstractEventListener<Map<Object, Object>> {
 
@@ -69,8 +68,6 @@ public final class EventManagerTestCase {
     /**
      * Test event listener 2.
      *
-     * @author <a href="http://88250.b3log.org">Liang Ding</a>
-     * @version 1.0.0.1, Jun 23, 2011
      */
     private final class TestEventListener2 extends AbstractEventListener<Map<Object, Object>> {
 
@@ -88,8 +85,6 @@ public final class EventManagerTestCase {
     /**
      * Test event asynchronous listener 1.
      *
-     * @author <a href="http://88250.b3log.org">Liang Ding</a>
-     * @version 1.0.0.2, Jun 23, 2011
      */
     private final class TestEventAsyncListener1 extends AbstractEventListener<Map<Object, Object>> {
 
