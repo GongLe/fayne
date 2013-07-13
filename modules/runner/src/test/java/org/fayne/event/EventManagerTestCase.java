@@ -27,12 +27,14 @@ public final class EventManagerTestCase {
         eventManager.registerListener(testEventAsyncListener1);
 
         final Map<Object, Object> eventData = Maps.newHashMap();
-        eventData.put("prop1", 1);
+        eventData.put("sync event key", "+sync event information.....");
+        final Map<Object, Object> asyncEventData = Maps.newHashMap();
+        eventData.put("async event key", "-async event information.....");
 
         eventManager.fireEventSynchronously(new Event<Map<Object, Object>>("Test sync listener1", eventData));
         eventManager.fireEventSynchronously(new Event<Map<Object, Object>>("Test sync listener2", eventData));
 
-        eventManager.<String>fireEventAsynchronously(new Event<Map<Object, Object>>("Test async listener1", eventData));
+        eventManager.<String>fireEventAsynchronously(new Event<Map<Object, Object>>("Test async listener1", asyncEventData));
         System.out.println("Doing somthing in main thread....");
         final long sleepTime = 101;
         final long loopCnt = 40;
@@ -50,7 +52,6 @@ public final class EventManagerTestCase {
 
     /**
      * Test event listener 1.
-     *
      */
     private final class TestEventListener1 extends AbstractEventListener<Map<Object, Object>> {
 
@@ -67,7 +68,6 @@ public final class EventManagerTestCase {
 
     /**
      * Test event listener 2.
-     *
      */
     private final class TestEventListener2 extends AbstractEventListener<Map<Object, Object>> {
 
@@ -84,7 +84,6 @@ public final class EventManagerTestCase {
 
     /**
      * Test event asynchronous listener 1.
-     *
      */
     private final class TestEventAsyncListener1 extends AbstractEventListener<Map<Object, Object>> {
 
