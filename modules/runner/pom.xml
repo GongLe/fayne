@@ -63,6 +63,12 @@
         </dependency>
         <!-- Wed end -->
 
+        <!-- freemarker -->
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <optional>true</optional>
+        </dependency>
 
         <!-- UTILS begin -->
         <dependency>

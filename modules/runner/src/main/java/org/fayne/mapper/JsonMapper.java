@@ -1,4 +1,11 @@
+
 package org.fayne.mapper;
+
+import java.io.IOException;
+
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -8,11 +15,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.fasterxml.jackson.module.jaxb.JaxbAnnotationModule;
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.io.IOException;
 
 /**
  * 简单封装Jackson，实现JSON String<->Java Object的Mapper.
@@ -78,7 +80,7 @@ public class JsonMapper {
      * <p/>
      * 如需反序列化复杂Collection如List<MyBean>, 请使用fromJson(String,JavaType)
      *
-     * @see #fromJson(String, com.fasterxml.jackson.databind.JavaType)
+     * @see #fromJson(String, JavaType)
      */
     public <T> T fromJson(String jsonString, Class<T> clazz) {
         if (StringUtils.isEmpty(jsonString)) {
