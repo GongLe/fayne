@@ -17,7 +17,7 @@
     <meta http-equiv="Cache-Control" content="no-store"/>
     <meta http-equiv="Pragma" content="no-cache"/>
     <meta http-equiv="Expires" content="0"/>
-    <link rel="shortcut icon" href="assets/ico/dolphin48x48.png">
+    <link rel="shortcut icon" href="${ctx}/static/assets/ico/dolphin48x48.png">
     <%@ include file="/WEB-INF/common/header.jsp" %>
     <sitemesh:head/>
 

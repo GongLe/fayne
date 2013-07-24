@@ -10,6 +10,9 @@
 
     <properties>
         <!--  版本变量定义 -->
+        <!--fayne runner-->
+        <fayne.runner>1.0-SNAPSHOT</fayne.runner>
+
         <spring.version>3.2.3.RELEASE</spring.version>
         <hibernate.version>4.2.2.Final</hibernate.version>
         <mybatis.version>3.2.2</mybatis.version>
@@ -74,6 +77,12 @@
     <!-- 预定义依赖项的version,scope与exclusions,子项目中只需定义groupId 和 artifactId 即可 -->
     <dependencyManagement>
         <dependencies>
+            <!--fayne runner-->
+            <dependency>
+                <groupId>org.fayne</groupId>
+                <artifactId>fayne-runner</artifactId>
+                <version>${fayne.runner}</version>
+            </dependency>
             <!-- SPRING basic begin(一般不需要显式定义) -->
             <dependency>
                 <groupId>org.springframework</groupId>
