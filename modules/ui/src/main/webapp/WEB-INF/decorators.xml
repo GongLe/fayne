@@ -7,4 +7,14 @@
 	<decorator name="default" page="default.jsp">
 		<pattern>/*</pattern>
 	</decorator>
+    <decorator name="mooncake" page="mooncake.jsp">
+		<pattern>/mooncake**</pattern>
+	</decorator>
+   <decorator name="fayne-ui" page="fayne-ui.jsp">
+		<pattern>/fayne-ui**</pattern>
+	</decorator>
+ <decorator name="ace" page="ace.jsp">
+		<pattern>/ace**</pattern>
+	</decorator>
+
 </decorators>

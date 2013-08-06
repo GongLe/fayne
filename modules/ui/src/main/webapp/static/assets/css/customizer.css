@@ -1,0 +1,91 @@
+/* icon list  */
+.ico-list {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.ico-list + .ico-list {
+    margin-top: 20px
+}
+
+.ico-list li {
+    float: left;
+    margin: 3px;
+    border: 1px solid #ddd;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    padding: 4px;
+    list-style: none;
+}
+
+.ico-list-dark li {
+    background: #888;
+    border-color: #888;
+}
+
+ul.icons-list,
+ul.icons-list li,
+ul.preloaders,
+ul.preloaders li {
+    list-style-type: none;
+    margin: 0;
+}
+
+ul.preloaders li {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin: 4px;
+}
+
+ul.icons-list li {
+    float: left;
+    display: block;
+    width: 33.3333%;
+    margin-bottom: 15px;
+}
+
+ul.icons-list li code {
+    color: #555;
+}
+
+ul.icons-list li > span {
+    font-size: 0;
+    color: #555;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    margin-right: 6px;
+}
+
+ul.icons-list.inverse li > span {
+    background-color: #444;
+    padding: 4px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+ul.icons-list li > span [class^="icon-"] {
+    font-size: 22px;
+    line-height: 1;
+}
+
+@media (max-width: 767px) {
+
+    ul.icons-list li {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    ul.icons-list li {
+        width: 100%;
+    }
+}
