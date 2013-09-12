@@ -33,43 +33,45 @@
     <link href="${ctx}/static/plugins/fort-awesome/css/font-awesome-ie7.min.css" type="text/css" rel="stylesheet"/>
     <![endif]-->
 
-        <!--utils-->
+    <!--utils-->
     <link href="${ctx}/static/ace/css/ace-utils.css" type="text/css" rel="stylesheet"/>
-        <!--layout-->
+    <!--layout-->
     <link href="${ctx}/static/ace/css/ace-layout.css" type="text/css" rel="stylesheet"/>
-         <!--components-->
+    <!--components-->
     <link href="${ctx}/static/ace/css/ace-components.css" type="text/css" rel="stylesheet"/>
-        <!--typography-->
+    <!--typography-->
     <link href="${ctx}/static/ace/css/ace-typography.css" type="text/css" rel="stylesheet"/>
-       <!--elements-->
+    <!--elements-->
     <link href="${ctx}/static/ace/css/ace-elements.css" type="text/css" rel="stylesheet"/>
-        <!--forms-->
+    <!--forms-->
     <link href="${ctx}/static/ace/css/ace-forms.css" type="text/css" rel="stylesheet"/>
 
-        <!--navbar-->
+    <!--navbar-->
     <link href="${ctx}/static/ace/css/ace-navbar.css" type="text/css" rel="stylesheet"/>
-        <!--left-sidebar-->
+    <!--left-sidebar-->
     <link href="${ctx}/static/ace/css/ace-left-sidebar.css" type="text/css" rel="stylesheet"/>
     <!--table-->
     <link href="${ctx}/static/ace/css/table.css" type="text/css" rel="stylesheet"/>
     <!--widgets-->
     <link href="${ctx}/static/ace/css/ace-widget.css" type="text/css" rel="stylesheet"/>
-     <!--tree-->
+    <!--tree-->
     <link href="${ctx}/static/ace/css/ace-tree.css" type="text/css" rel="stylesheet"/>
-       <!--gallery-->
+    <!--gallery-->
     <link href="${ctx}/static/ace/css/ace-gallery.css" type="text/css" rel="stylesheet"/>
     <!--ace css
     <link href="${ctx}/static/ace/css/ace.min.css" type="text/css" rel="stylesheet"/>
        -->
-
-  <%--  <link href="${ctx}/static/ace/css/ace-responsive.min.css" type="text/css" rel="stylesheet"/>
-    <link href="${ctx}/static/ace/css/ace-skins.min.css" type="text/css" rel="stylesheet"/>         --%>
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="${ctx}/static/ace/css/ace-ie.min.css"/>
+    <![endif]-->
+    <%--  <link href="${ctx}/static/ace/css/ace-responsive.min.css" type="text/css" rel="stylesheet"/>
+      <link href="${ctx}/static/ace/css/ace-skins.min.css" type="text/css" rel="stylesheet"/>         --%>
 
     <!--jquery -->
     <script src="${ctx}/static/assets/js/jquery-1.10.2.js"></script>
     <script src="${ctx}/static/assets/js/jquery-migrate-1.2.1.js"></script>
-    <script  >
-        if("ontouchend" in document) document.write("<script src=${ctx}/static/assets/js/jquery.mobile.custom.js'>"+"<"+"/script>");
+    <script>
+        if ("ontouchend" in document) document.write("<script src=${ctx}/static/assets/js/jquery.mobile.custom.js'>" + "<" + "/script>");
     </script>
 
     <!--bootstrap js-->
@@ -84,13 +86,13 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="navbar-inner">
-           <div class="container-fluid">
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="container-fluid">
             <a href="#" class="brand">
-                <small><i class="icon-leaf"></i>  Ace Admin </small>
+                <small><i class="icon-leaf"></i> Ace Admin</small>
             </a><!--/.brand-->
-                 <ul class="nav ace-nav pull-right">
+            <ul class="nav ace-nav pull-right">
                 <li class="grey">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                         <i class="icon-tasks"></i>
@@ -160,72 +162,72 @@
                                 <i class="icon-arrow-right"></i>
                             </a>
                         </li>
-            </ul>
-                   </li>
-
-                 <li class="purple">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                <i class="icon-bell-alt icon-animated-bell"></i>
-                <span class="badge badge-important">8</span>
-            </a>
-
-            <ul class="pull-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-closer">
-                <li class="nav-header">
-                    <i class="icon-warning-sign"></i>
-                    8 Notifications
+                    </ul>
                 </li>
 
-                <li>
-                    <a href="#">
-                        <div class="clearfix">
+                <li class="purple">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <i class="icon-bell-alt icon-animated-bell"></i>
+                        <span class="badge badge-important">8</span>
+                    </a>
+
+                    <ul class="pull-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-closer">
+                        <li class="nav-header">
+                            <i class="icon-warning-sign"></i>
+                            8 Notifications
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="clearfix">
                                                     <span class="pull-left">
                                                         <i class="btn btn-mini no-hover btn-pink icon-comment"></i>
                                                         New Comments
                                                     </span>
-                            <span class="pull-right badge badge-info">+12</span>
-                        </div>
-                    </a>
-                </li>
+                                    <span class="pull-right badge badge-info">+12</span>
+                                </div>
+                            </a>
+                        </li>
 
-                <li>
-                    <a href="#">
-                        <i class="btn btn-mini btn-primary icon-user"></i>
-                        Bob just signed up as an editor ...
-                    </a>
-                </li>
+                        <li>
+                            <a href="#">
+                                <i class="btn btn-mini btn-primary icon-user"></i>
+                                Bob just signed up as an editor ...
+                            </a>
+                        </li>
 
-                <li>
-                    <a href="#">
-                        <div class="clearfix">
+                        <li>
+                            <a href="#">
+                                <div class="clearfix">
                                                     <span class="pull-left">
                                                         <i class="btn btn-mini no-hover btn-success icon-shopping-cart"></i>
                                                         New Orders
                                                     </span>
-                            <span class="pull-right badge badge-success">+8</span>
-                        </div>
-                    </a>
-                </li>
+                                    <span class="pull-right badge badge-success">+8</span>
+                                </div>
+                            </a>
+                        </li>
 
-                <li>
-                    <a href="#">
-                        <div class="clearfix">
+                        <li>
+                            <a href="#">
+                                <div class="clearfix">
                                                     <span class="pull-left">
                                                         <i class="btn btn-mini no-hover btn-info icon-twitter"></i>
                                                         Followers
                                                     </span>
-                            <span class="pull-right badge badge-info">+11</span>
-                        </div>
-                    </a>
-                </li>
+                                    <span class="pull-right badge badge-info">+11</span>
+                                </div>
+                            </a>
+                        </li>
 
-                <li>
-                    <a href="#">
-                        See all notifications
-                        <i class="icon-arrow-right"></i>
-                    </a>
+                        <li>
+                            <a href="#">
+                                See all notifications
+                                <i class="icon-arrow-right"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-            </ul>
-        </li>
 
                 <li class="green">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
@@ -269,280 +271,265 @@
                         </li>
                     </ul>
                 </li>
-        </ul><!--/.ace-nav-->
-             </div><!--/.container-fluid-->
-        </div><!--/.navbar-inner-->
-    </div><!--/.navbar-->
-    <div class="main-container container-fluid">
-        <a class="menu-toggler" id="menu-toggler" href="#">
-            <span class="menu-text"></span>
-        </a>
-         <div class="sidebar" id="sidebar">
-                  <div class="sidebar-shortcuts" id="sidebar-shortcuts">
-            <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
-                <button class="btn btn-small btn-success">
-                    <i class="icon-signal"></i>
-                </button>
+            </ul>
+            <!--/.ace-nav-->
+        </div>
+        <!--/.container-fluid-->
+    </div>
+    <!--/.navbar-inner-->
+</div>
+<!--/.navbar-->
+<div class="main-container container-fluid">
+<a class="menu-toggler" id="menu-toggler" href="#">
+    <span class="menu-text"></span>
+</a>
 
-                <button class="btn btn-small btn-info">
-                    <i class="icon-pencil"></i>
-                </button>
+<div class="sidebar" id="sidebar">
+    <form action="search-results.html" method="GET" class="search-form">
+        <div class="search-pane">
+            <input type="text" name="search" placeholder="Search here...">
+            <button type="submit"><i class="icon-search"></i></button>
+        </div>
+    </form>
 
-                <button class="btn btn-small btn-warning">
-                    <i class="icon-group"></i>
-                </button>
+<ul class="nav nav-list">
+<li>
+    <a href="javascript:;">
+        <i class="icon-dashboard"></i>
+        <span class="menu-text"> Dashboard </span>
+    </a>
+</li>
 
-                <button class="btn btn-small btn-danger">
-                    <i class="icon-cogs"></i>
-                </button>
-            </div>
+<li>
+    <a href="${ctx}/ace/typography.jsp">
+        <i class="icon-text-width"></i>
+        <span class="menu-text"> Typography </span>
+    </a>
+</li>
 
-            <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
-                <span class="btn btn-success"></span>
+<li>
+    <a href="#" class="dropdown-toggle">
+        <i class="icon-desktop"></i>
+        <span class="menu-text"> UI Elements </span>
 
-                <span class="btn btn-info"></span>
+        <b class="arrow icon-angle-down"></b>
+    </a>
 
-                <span class="btn btn-warning"></span>
-
-                <span class="btn btn-danger"></span>
-            </div>
-        </div><!--#sidebar-shortcuts-->
-
-                  <ul class="nav nav-list">
+    <ul class="submenu">
         <li>
-            <a href="javascript:;">
-                <i class="icon-dashboard"></i>
-                <span class="menu-text"> Dashboard </span>
+            <a href="${ctx}/ace/elements.jsp">
+                <i class="icon-double-angle-right"></i>
+                Elements
             </a>
         </li>
 
         <li>
-            <a href="${ctx}/ace/typography.jsp">
-                <i class="icon-text-width"></i>
-                <span class="menu-text"> Typography </span>
+            <a href="${ctx}/ace/buttons.jsp">
+                <i class="icon-double-angle-right"></i>
+                Buttons &amp; Icons
+            </a>
+        </li>
+
+        <li>
+            <a href="treeview.jsp">
+                <i class="icon-double-angle-right"></i>
+                Treeview
             </a>
         </li>
 
         <li>
             <a href="#" class="dropdown-toggle">
-                <i class="icon-desktop"></i>
-                <span class="menu-text"> UI Elements </span>
+                <i class="icon-double-angle-right"></i>
 
+                Three Level Menu
                 <b class="arrow icon-angle-down"></b>
             </a>
 
             <ul class="submenu">
                 <li>
-                    <a href="${ctx}/ace/elements.jsp">
-                        <i class="icon-double-angle-right"></i>
-                        Elements
-                    </a>
-                </li>
-
-                <li>
-                    <a href="${ctx}/ace/buttons.jsp">
-                        <i class="icon-double-angle-right"></i>
-                        Buttons &amp; Icons
-                    </a>
-                </li>
-
-                <li>
-                    <a href="treeview.jsp">
-                        <i class="icon-double-angle-right"></i>
-                        Treeview
+                    <a href="#">
+                        <i class="icon-leaf"></i>
+                        Item #1
                     </a>
                 </li>
 
                 <li>
                     <a href="#" class="dropdown-toggle">
-                        <i class="icon-double-angle-right"></i>
+                        <i class="icon-pencil"></i>
 
-                        Three Level Menu
+                        4th level
                         <b class="arrow icon-angle-down"></b>
                     </a>
 
                     <ul class="submenu">
                         <li>
                             <a href="#">
-                                <i class="icon-leaf"></i>
-                                Item #1
+                                <i class="icon-plus"></i>
+                                Add Product
                             </a>
                         </li>
 
                         <li>
-                            <a href="#" class="dropdown-toggle">
-                                <i class="icon-pencil"></i>
-
-                                4th level
-                                <b class="arrow icon-angle-down"></b>
+                            <a href="#">
+                                <i class="icon-eye-open"></i>
+                                View Products
                             </a>
-
-                            <ul class="submenu">
-                                <li>
-                                    <a href="#">
-                                        <i class="icon-plus"></i>
-                                        Add Product
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <i class="icon-eye-open"></i>
-                                        View Products
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
                     </ul>
                 </li>
             </ul>
         </li>
+    </ul>
+</li>
 
+<li>
+    <a href="table.jsp">
+        <i class="icon-list"></i>
+        <span class="menu-text"> Tables </span>
+    </a>
+</li>
+
+<li>
+    <a href="#" class="dropdown-toggle">
+        <i class="icon-edit"></i>
+        <span class="menu-text"> Forms </span>
+
+        <b class="arrow icon-angle-down"></b>
+    </a>
+
+    <ul class="submenu">
         <li>
-            <a href="table.jsp">
-                <i class="icon-list"></i>
-                <span class="menu-text"> Tables </span>
+            <a href="form-elements.jsp">
+                <i class="icon-double-angle-right"></i>
+                Form Elements
             </a>
         </li>
 
         <li>
-            <a href="#" class="dropdown-toggle">
-                <i class="icon-edit"></i>
-                <span class="menu-text"> Forms </span>
-
-                <b class="arrow icon-angle-down"></b>
-            </a>
-
-            <ul class="submenu">
-                <li>
-                    <a href="form-elements.jsp">
-                        <i class="icon-double-angle-right"></i>
-                        Form Elements
-                    </a>
-                </li>
-
-                <li>
-                    <a href="form-wizard.jsp">
-                        <i class="icon-double-angle-right"></i>
-                        Wizard &amp; Validation
-                    </a>
-                </li>
-
-                <li>
-                    <a href="javascript:;">
-                        <i class="icon-double-angle-right"></i>
-                        Wysiwyg &amp; Markdown
-                    </a>
-                </li>
-            </ul>
-        </li>
-
-        <li>
-            <a href="widgets.jsp">
-                <i class="icon-list-alt"></i>
-                <span class="menu-text"> Widgets </span>
-            </a>
-        </li>
-
-
-        <li>
-            <a href="gallery.jsp">
-                <i class="icon-picture"></i>
-                <span class="menu-text"> Gallery </span>
+            <a href="form-wizard.jsp">
+                <i class="icon-double-angle-right"></i>
+                Wizard &amp; Validation
             </a>
         </li>
 
         <li>
-            <a href="#" class="dropdown-toggle">
-                <i class="icon-tag"></i>
-                <span class="menu-text"> More Pages </span>
-
-                <b class="arrow icon-angle-down"></b>
+            <a href="javascript:;">
+                <i class="icon-double-angle-right"></i>
+                Wysiwyg &amp; Markdown
             </a>
+        </li>
+    </ul>
+</li>
 
-            <ul class="submenu">
-                <li>
-                    <a href="profile.jsp">
-                        <i class="icon-double-angle-right"></i>
-                        User Profile
-                    </a>
-                </li>
+<li>
+    <a href="widgets.jsp">
+        <i class="icon-list-alt"></i>
+        <span class="menu-text"> Widgets </span>
+    </a>
+</li>
 
-                <li>
-                    <a href="pricing.jsp">
-                        <i class="icon-double-angle-right"></i>
-                        Pricing Tables
-                    </a>
-                </li>
 
-                <li>
-                    <a href="invoice.jsp">
-                        <i class="icon-double-angle-right"></i>
-                        Invoice
-                    </a>
-                </li>
+<li>
+    <a href="gallery.jsp">
+        <i class="icon-picture"></i>
+        <span class="menu-text"> Gallery </span>
+    </a>
+</li>
 
-                <li>
-                    <a href="login.jsp">
-                        <i class="icon-double-angle-right"></i>
-                        Login &amp; Register
-                    </a>
-                </li>
-            </ul>
+<li>
+    <a href="#" class="dropdown-toggle">
+        <i class="icon-tag"></i>
+        <span class="menu-text"> More Pages </span>
+
+        <b class="arrow icon-angle-down"></b>
+    </a>
+
+    <ul class="submenu">
+        <li>
+            <a href="profile.jsp">
+                <i class="icon-double-angle-right"></i>
+                User Profile
+            </a>
         </li>
 
-        <li class="active open">
-            <a href="#" class="dropdown-toggle">
-                <i class="icon-file-alt"></i>
+        <li>
+            <a href="pricing.jsp">
+                <i class="icon-double-angle-right"></i>
+                Pricing Tables
+            </a>
+        </li>
+
+        <li>
+            <a href="invoice.jsp">
+                <i class="icon-double-angle-right"></i>
+                Invoice
+            </a>
+        </li>
+
+        <li>
+            <a href="login.jsp">
+                <i class="icon-double-angle-right"></i>
+                Login &amp; Register
+            </a>
+        </li>
+    </ul>
+</li>
+
+<li class="active open">
+    <a href="#" class="dropdown-toggle">
+        <i class="icon-file-alt"></i>
 
                                     <span class="menu-text">
                                         Other Pages
                                         <span class="badge badge-primary ">4</span>
                                     </span>
 
-                <b class="arrow icon-angle-down"></b>
+        <b class="arrow icon-angle-down"></b>
+    </a>
+
+    <ul class="submenu">
+        <li class="active">
+            <a href="error-404.jsp">
+                <i class="icon-double-angle-right"></i>
+                Error 404
             </a>
-
-            <ul class="submenu">
-                <li class="active">
-                    <a href="error-404.jsp">
-                        <i class="icon-double-angle-right"></i>
-                        Error 404
-                    </a>
-                </li>
-
-                <li>
-                    <a href="error-500.jsp">
-                        <i class="icon-double-angle-right"></i>
-                        Error 500
-                    </a>
-                </li>
-
-                <li>
-                    <a href="grid.jsp">
-                        <i class="icon-double-angle-right"></i>
-                        Grid
-                    </a>
-                </li>
-
-                <li>
-                    <a href="blank.jsp">
-                        <i class="icon-double-angle-right"></i>
-                        Blank Page
-                    </a>
-                </li>
-            </ul>
         </li>
-        </ul><!--/.nav-list-->
 
-                <div class="sidebar-collapse" id="sidebar-collapse">
-                    <i class="icon-double-angle-left"></i>
-                </div>
-             </div><!--./sidebar-->
+        <li>
+            <a href="error-500.jsp">
+                <i class="icon-double-angle-right"></i>
+                Error 500
+            </a>
+        </li>
 
-        <div class="main-content">
-           <sitemesh:body></sitemesh:body>
-        </div><!--/.main-content-->
-    </div>
+        <li>
+            <a href="grid.jsp">
+                <i class="icon-double-angle-right"></i>
+                Grid
+            </a>
+        </li>
+
+        <li>
+            <a href="blank.jsp">
+                <i class="icon-double-angle-right"></i>
+                Blank Page
+            </a>
+        </li>
+    </ul>
+</li>
+</ul>
+<!--/.nav-list-->
+
+<div class="sidebar-collapse" id="sidebar-collapse">
+    <i class="icon-double-angle-left"></i>
+</div>
+</div>
+<!--./sidebar-->
+
+<div class="main-content">
+    <sitemesh:body></sitemesh:body>
+</div>
+<!--/.main-content-->
+</div>
 </body>
 </html>

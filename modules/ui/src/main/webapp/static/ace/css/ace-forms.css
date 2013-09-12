@@ -66,7 +66,7 @@ textarea:focus,input[type="text"]:focus,input[type="password"]:focus,input[type=
     -moz-box-shadow:none;
     box-shadow:none;
     color:#696969;
-    border-color:#f59942;
+    border-color: #86beed;
     background-color:#fff
 }
 input.block {
@@ -666,6 +666,9 @@ span.input-icon {
     color:#848484!important;
     background-color:#eee!important
 }
+
+
+
 /**wizard step**/
 .wizard-steps {
     list-style:none;

@@ -148,58 +148,66 @@
 /**面包屑导航 :: breadcrumbs**/
 
 .breadcrumbs {
-    position:relative;
-    border-bottom:1px solid #e5e5e5;
-    background-color:#f5f5f5;
-    min-height:40px;
-    line-height:39px;
-    padding:0 12px 0 0;
-    display:block
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #f5f5f5;
+    min-height: 35px;
+    line-height: 35px;
+    padding: 0 12px 0 0;
+    display: block
 }
-.breadcrumbs.fixed {
-    position:fixed;
-    right:0;
-    left:190px;
-    top:45px;
-    z-index:1028
+
+.breadcrumbs.fixed, .breadcrumbs.breadcrumbs-fixed {
+    position: fixed;
+    right: 0;
+    left: 190px;
+    top: 45px;
+    z-index: 1028
 }
+
 .breadcrumb {
-    background-color:transparent;
-    display:inline-block;
-    line-height:24px;
-    margin:0 22px 0 12px;
-    padding:0;
-    font-size:13px;
-    color:#333;
-    border-radius:0
+    background-color: transparent;
+    display: inline-block;
+    line-height: 24px;
+    margin: 0 22px 0 12px;
+    padding: 0;
+    *padding: 8px 0;
+    font-size: 13px;
+    color: #333;
+    border-radius: 0
 }
-.breadcrumb>li,.breadcrumb>li.active {
-    color:#555
+
+.breadcrumb>li+li:before {
+    font-family: FontAwesome;
+    font-size: 14px;
+    content: "\f105";
+    color: #b2b6bf;
+    margin-right: 2px;
+    padding: 0 5px 0 2px;
+    position: relative;
+    top: 1px
 }
-.breadcrumb>li>.divider {
-    padding:0 4px
+
+.breadcrumb>li, .breadcrumb>li.active {
+    color: #555
 }
+
 .breadcrumb>li>a {
-    display:inline-block;
-    padding:0 4px;
-    color:#4c8fbd
+    display: inline-block;
+    padding: 0 4px;
+    color: #4c8fbd
 }
+
+
+
 .breadcrumb .home-icon {
-    margin-left:4px;
-    margin-right:2px;
-    font-size:20px;
-    position:relative;
-    top:2px
+    margin-left: 4px;
+    margin-right: 2px;
+    font-size: 20px;
+    position: relative;
+    top: 2px
 }
-.breadcrumb .arrow-icon {
-    height:22px;
-    padding:0;
-    margin:0;
-    position:relative;
-    top:1px;
-    font-size:14px;
-    color:#b2b6bf
-}
+
 /**进度条 :: progress **/
 .progress {
     border-radius:0;
@@ -637,12 +645,22 @@
     background-image:none
 }
 .dropdown-menu {
-    -webkit-border-radius:0!important;
+  /**  -webkit-border-radius:0!important;
     -moz-border-radius:0!important;
     border-radius:0!important;
     -webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);
     -moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);
-    box-shadow:0 2px 4px rgba(0,0,0,0.2)
+    box-shadow:0 2px 4px rgba(0,0,0,0.2)    **/
+    border: 1px solid #b9b9b9;
+    background: #fff;
+
+    -webkit-border-radius:0!important;
+    -moz-border-radius:0!important;
+    border-radius:0!important;
+    border-radius: 0!important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 .dropdown-menu>li>a {
     font-size:13px;

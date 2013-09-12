@@ -75,6 +75,7 @@
     border-right:1px solid #ccc;
     background-color:#f2f2f2 ;
     font-family: 'Microsoft Yahei' ;
+    font-size: 12px;
 }
 /**ie7不识别::before伪类**/
 .sidebar:before {
@@ -98,6 +99,43 @@
     left:0;
     right:auto
 }
+/**search-form**/
+.sidebar .search-form {
+    height: 35px;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+.sidebar .search-form>.search-pane {
+    margin: 5px;
+    height: 28px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+.sidebar .search-form>.search-pane>input {
+    background: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+    float: left;
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top: 1px;
+    width: 125px;
+}
+.sidebar .search-form>.search-pane button[type="submit"] {
+    float: right;
+    background: #368ee0;
+    color: #fff;
+    border: 0;
+    margin: 2px 2px 0px 0;
+    line-height: 19px;
+    min-height: 24px;
+}
+
 li [class^="icon-"],li [class*=" icon-"],.nav-list li [class^="icon-"],.nav-list li [class*=" icon-"] {
     width:auto
 }
@@ -238,7 +276,7 @@ li [class^="icon-"],li [class*=" icon-"],.nav-list li [class^="icon-"],.nav-list
     color:#616161;
     padding:7px 0 8px 37px;
     margin:0;
-    border-top:1px dotted #e4e4e4
+ /* */  border-top:1px dotted #e4e4e4
 }
 .nav-list>li .submenu>li>a:focus {
     text-decoration:none
@@ -270,7 +308,7 @@ li [class^="icon-"],li [class*=" icon-"],.nav-list li [class^="icon-"],.nav-list
 .nav-list>li .submenu>li.active>a>[class*="icon-"]:first-child {
     color:#c86139
 }
-.nav-list>li>.submenu>li:before {
+/*.nav-list>li>.submenu>li:before {
     content:"";
     display:inline-block;
     position:absolute;
@@ -278,11 +316,11 @@ li [class^="icon-"],li [class*=" icon-"],.nav-list li [class^="icon-"],.nav-list
     left:18px;
     top:17px;
     border-top:1px solid #ccd7e2
-}
+}*/
 .nav-list>li>.submenu>li:first-child>a {
     border-top:1px solid #fafafa
 }
-.nav-list>li>.submenu:before {
+/*.nav-list>li>.submenu:before {
     content:"";
     display:block;
     position:absolute;
@@ -297,7 +335,7 @@ li [class^="icon-"],li [class*=" icon-"],.nav-list li [class^="icon-"],.nav-list
 }
 .nav-list>li.active>.submenu:before {
     border-left-color:#bccfe0
-}
+}*/
 .nav-list li .submenu {
     overflow:hidden
 }

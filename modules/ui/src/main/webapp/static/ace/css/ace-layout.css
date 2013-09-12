@@ -95,3 +95,63 @@ a:focus, a:active {
 }
 
 /**end layout style**/
+
+/** error page style**/
+
+.error-page {
+    background: #368ee0!important;
+}
+
+.error-page::before {
+    background: #368ee0!important;
+}
+
+ .error-page .wrapper {
+    width: 300px;
+    height: 230px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -165px -150px
+}
+
+ .error-page .wrapper .code {
+    color: #fff;
+    font-size: 90px;
+    text-align: center
+}
+
+ .error-page .wrapper .code span {
+    margin-right: 15px
+}
+
+ .error-page .wrapper .desc {
+    color: #fff;
+    font-size: 14px;
+    margin: 20px 0
+}
+
+ .error-page .wrapper .input-append {
+    width: 300px;
+    background: #fff;
+    padding: 2px
+}
+
+ .error-page .wrapper .input-append input {
+    border: 0;
+    width: 260px;
+    background: #fff
+}
+
+ .error-page .wrapper .input-append .btn {
+    border: 0;
+    background: #368ee0;
+    color: #fff;
+     margin: 2px 2px 0px 0;
+     line-height: 19px;
+     min-height: 24px;
+}
+
+ .error-page .wrapper .input-append .btn:hover {
+    background: #1b67af
+}
