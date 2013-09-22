@@ -72,13 +72,20 @@
     <script src="${ctx}/static/assets/js/jquery-migrate-1.2.1.js"></script>
     <script>
         if ("ontouchend" in document) document.write("<script src=${ctx}/static/assets/js/jquery.mobile.custom.js'>" + "<" + "/script>");
+
+        jQuery(function () {
+            if (!("ace" in window)) {
+                window.ace = {}
+            }
+            window.ace.click_event = $.fn.tap ? "tap" : "click"       ;
+          });
     </script>
 
     <!--bootstrap js-->
     <script src="${ctx}/static/plugins/bootstrap/2.3.2/js/bootstrap.js"></script>
     <!--ace js-->
-    <script src="${ctx}/static/ace/js/ace-elements.min.js"></script>
-    <script src="${ctx}/static/ace/js/ace.min.js"></script>
+ <%--   <script src="${ctx}/static/ace/js/ace-elements.min.js"></script>--%>
+    <script src="${ctx}/static/ace/js/ace.min2.js"></script>
 
 
     <sitemesh:head/>
@@ -92,7 +99,7 @@
             <a href="#" class="brand">
                 <small><i class="icon-leaf"></i> Ace Admin</small>
             </a><!--/.brand-->
-            <ul class="nav ace-nav pull-right">
+            <ul class="nav ace-nav pull-right ">
                 <li class="grey">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                         <i class="icon-tasks"></i>

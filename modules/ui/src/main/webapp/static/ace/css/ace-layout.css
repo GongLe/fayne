@@ -99,11 +99,11 @@ a:focus, a:active {
 /** error page style**/
 
 .error-page {
-    background: #368ee0!important;
+    background: #368ee0;
 }
 
-.error-page::before {
-    background: #368ee0!important;
+body.error-page:before {
+    display: none;
 }
 
  .error-page .wrapper {
