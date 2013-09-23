@@ -105,6 +105,13 @@
     margin: 0;
     background-color: #f9f9f9;
 }
+
+.sidebar.menu-min .search-form {
+    height: 5px;
+}
+.sidebar.menu-min  .search-form>.search-pane {
+   display: none; /**min菜单状态是隐藏**/
+}
 .sidebar .search-form>.search-pane {
     margin: 5px;
     height: 28px;
@@ -136,6 +143,7 @@
     color: #fff;
     border: 0;
     margin: 2px 2px 0px 0;
+    *padding:3px 5px 3px 7px;  /**ie 7 hack**/
     line-height: 19px;
     min-height: 24px;
 }
@@ -180,7 +188,8 @@ li [class^="icon-"],li [class*=" icon-"],.nav-list li [class^="icon-"],.nav-list
     min-width:30px;
     text-align:center;
     font-size:18px;
-    font-weight:normal
+    font-weight:normal;
+
 }
 .nav-list>li>a:focus {
     background-color:#f9f9f9;
@@ -577,7 +586,7 @@ li [class^="icon-"],li [class*=" icon-"],.nav-list li [class^="icon-"],.nav-list
     padding-left:24px
 }
 .menu-min .nav-list>li>.submenu li>a>[class*="icon-"]:first-child {
-    left:4px
+    left:4px;
 }
 .menu-min .nav-list>li:hover>.submenu {
     display:block!important
@@ -619,6 +628,7 @@ li [class^="icon-"],li [class*=" icon-"],.nav-list li [class^="icon-"],.nav-list
     border-width:1px;
     border-color:#aeaeae
 }
+
 .nav-list>li>.submenu li>.submenu {
     border-top:0;
     background-color:transparent;

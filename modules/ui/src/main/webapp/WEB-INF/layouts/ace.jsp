@@ -50,10 +50,11 @@
     <link href="${ctx}/static/ace/css/ace-navbar.css" type="text/css" rel="stylesheet"/>
     <!--left-sidebar-->
     <link href="${ctx}/static/ace/css/ace-left-sidebar.css" type="text/css" rel="stylesheet"/>
-    <!--table-->
-    <link href="${ctx}/static/ace/css/table.css" type="text/css" rel="stylesheet"/>
+
     <!--widgets-->
     <link href="${ctx}/static/ace/css/ace-widget.css" type="text/css" rel="stylesheet"/>
+    <!--table-->
+    <link href="${ctx}/static/ace/css/table.css" type="text/css" rel="stylesheet"/>
     <!--tree-->
     <link href="${ctx}/static/ace/css/ace-tree.css" type="text/css" rel="stylesheet"/>
     <!--gallery-->
@@ -420,9 +421,9 @@
         </li>
 
         <li>
-            <a href="javascript:;">
+            <a href="box.jsp">
                 <i class="icon-double-angle-right"></i>
-                Wysiwyg &amp; Markdown
+                 box form borded
             </a>
         </li>
     </ul>

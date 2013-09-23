@@ -781,3 +781,41 @@ span.input-icon {
 .wizard-actions {
     text-align:right
 }
+/**Extended forms :: **/
+
+.form-horizontal.form-bordered .control-group {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #ddd;
+    background: #f6f6f6
+}
+
+.form-horizontal.form-bordered .control-group:last-child {
+    border-bottom: 0
+}
+
+.form-horizontal.form-bordered .control-group .controls {
+    padding: 10px;
+    background: #fff;
+    border-left: 1px solid #ddd;
+    *zoom: 1
+}
+
+.form-horizontal.form-bordered .control-group .controls:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.form-horizontal.form-bordered .control-group .control-label {
+    margin: 0;
+    padding: 15px 10px 5px 10px;
+    color: #555
+}
+
+.form-horizontal.form-bordered .control-group .control-label small {
+    display: block;
+    font-size: 12px;
+    color: #888;
+    font-weight: normal
+}

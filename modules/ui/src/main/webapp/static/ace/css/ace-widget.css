@@ -666,3 +666,293 @@
 .widget-placeholder {
     border:2px dashed #d9d9d9
 }
+
+/**flat box http://www.eakroko.de/flat/forms-extended.html#**/
+
+
+/** falt box**/
+.sortable-box .box-title:hover {
+    cursor: move
+}
+.box .table tr th,
+.box .table tr td {
+    border-top: 1px dotted #ddd;
+}
+.box.box-condensed .box-title {
+    padding: 2px 0 2px 4px
+}
+
+.box.box-condensed .box-title h3 {
+    font-size: 18px
+}
+
+.box.box-condensed .box-title .actions {
+    margin-top: 1px
+}
+
+.box.box-condensed .box-title .actions .btn>i {
+    font-size: 12px
+}
+
+.box.box-condensed .box-title .actions .btn {
+    padding: 4px 8px
+}
+
+.box.box-condensed .box-content {
+    padding: 10px
+}
+
+.box.box-small .box-title {
+    padding: 0 0 0 3px
+}
+
+.box.box-small .box-title h3 {
+    font-size: 16px
+}
+
+.box.box-small .box-title .actions {
+    margin-top: 3px
+}
+
+.box.box-small .box-title .actions .btn>i {
+    font-size: 11px
+}
+
+.box.box-small .box-title .actions .btn {
+    padding: 2px 7px
+}
+
+.box.box-small .box-content {
+    padding: 5px
+}
+
+.box.box-color .box-title {
+    background: #368ee0
+}
+
+.box.box-color .box-title h3 {
+    color: #fff
+}
+
+.box.box-color .box-title .tabs>li.active>a {
+    background: #fff;
+    color: #368ee0
+}
+
+.box.box-color .box-title .tabs>li>a {
+    color: #fff
+}
+
+.box.box-color .box-title .tabs>li>a:hover {
+    color: #368ee0
+}
+
+.box.box-color .box-title .actions>a {
+    color: #fff
+}
+
+.box.box-color .box-title .actions>a:hover {
+    background: #fff;
+    color: #368ee0
+}
+
+.box.box-bordered .table {
+    margin-bottom: 0
+}
+
+.box.box-bordered .table.dataTable-fixedcolumn.DTFC_Cloned {
+    border-right: 2px solid #ddd
+}
+
+.box.box-bordered .table.dataTable-fixedcolumn.DTFC_Cloned th {
+    border-right: 2px solid #333
+}
+
+.box.box-bordered .table.dataTable-fixedcolumn.DTFC_Cloned td {
+    text-align: center
+}
+
+.box.box-bordered .table.table-bordered {
+    border-right: 0
+}
+
+.box.box-bordered .table.table-bordered th:first-child, .box.box-bordered .table.table-bordered td:first-child {
+    border-left: 0
+}
+
+.box.box-bordered .table.table-bordered th:last-child, .box.box-bordered .table.table-bordered td:last-child {
+    border-right: 0
+}
+
+.box.box-bordered .form-bordered {
+    margin-bottom: 0
+}
+
+.box.box-bordered .slimScrollDiv {
+    border-bottom: 2px solid #ddd
+}
+
+.box.box-bordered.box-color .slimScrollDiv {
+    border-bottom: 2px solid #368ee0
+}
+
+.box.box-bordered.box-color .box-title {
+    border-color: #368ee0
+}
+
+.box.box-bordered.box-color .box-content {
+    border-color: #368ee0
+}
+
+.box.box-bordered .box-title {
+    border: 2px solid #ddd
+}
+
+.box.box-bordered .box-content {
+    border: 2px solid #ddd;
+    border-top: 0
+}
+
+.box .box-title {
+    *zoom: 1;
+    border-bottom: 1px solid #ddd;
+    padding: 7px 0 7px 10px;
+    margin-top: 20px
+}
+
+.box .box-title:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.box .box-title h3 {
+    float: left;
+    margin: 3px 0 3px 0;
+    line-height: 24px;
+    font-weight: 400;
+    color: #444;
+    font-size: 20px
+}
+
+.box .box-title h3 i {
+    margin: 0 10px 0 5px
+}
+
+.box .box-title .tabs {
+    float: right;
+    *zoom: 1;
+    margin: 5px 10px 0 0;
+    padding: 0;
+    list-style-type: none
+}
+
+.box .box-title .tabs:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.box .box-title .tabs.tabs-left {
+    float: left
+}
+
+.box .box-title .tabs>li {
+    float: left;
+    margin-right: 5px
+}
+
+.box .box-title .tabs>li:last-child {
+    margin-right: 0
+}
+
+.box .box-title .tabs>li>a {
+    padding: 4px 8px
+}
+
+.box .box-title .tabs>li>a:hover {
+    text-decoration: none;
+    background: #eee
+}
+
+.box .box-title .tabs>li.active>a {
+    background: #368ee0;
+    color: #fff
+}
+
+.box .box-title .actions {
+    margin-top: 0px;
+    float: right;
+    margin-right: 10px
+}
+
+.box .box-title .actions .btn {
+    background: none;
+    color: #333;
+    padding: 5px 9px
+}
+
+.box .box-title .actions .btn:hover {
+    background: #368ee0;
+    color: #fff
+}
+
+.box .box-title .actions .content-move {
+    cursor: move
+}
+
+.box .box-content {
+    *zoom: 1;
+    padding: 20px;
+    background: #fff
+}
+
+.box .box-content:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+/**table-pagination**/
+.table-pagination {
+    float: right;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.table-pagination>a {
+    margin-right: 5px;
+    background: #eee;
+    padding: 3px 8px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.table-pagination>a.disabled {
+    color: #999
+}
+
+.table-pagination>a.disabled:hover {
+    background: #eee;
+    cursor: default
+}
+
+.table-pagination>a:hover {
+    background: #ddd
+}
+
+.table-pagination>span>a {
+    padding: 3px 8px;
+    margin-right: 5px;
+    background: #eee;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.table-pagination>span>a.active {
+    background: #368ee0;
+    color: #fff
+}
