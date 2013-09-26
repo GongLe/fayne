@@ -116,7 +116,7 @@ select:focus {
     -webkit-box-shadow:none;
     -moz-box-shadow:none;
     box-shadow:none;
-    border-color:#f59942
+    border-color:#86beed;
 }
 select option {
     padding:3px 4px

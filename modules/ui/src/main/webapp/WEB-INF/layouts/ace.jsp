@@ -65,6 +65,7 @@
     <!--[if lt IE 9]>
     <link rel="stylesheet" href="${ctx}/static/ace/css/ace-ie.min.css"/>
     <![endif]-->
+
     <%--  <link href="${ctx}/static/ace/css/ace-responsive.min.css" type="text/css" rel="stylesheet"/>
       <link href="${ctx}/static/ace/css/ace-skins.min.css" type="text/css" rel="stylesheet"/>         --%>
 
@@ -424,6 +425,12 @@
             <a href="box.jsp">
                 <i class="icon-double-angle-right"></i>
                  box form borded
+            </a>
+        </li>
+        <li>
+            <a href="datatables.jsp">
+                <i class="icon-double-angle-right"></i>
+                 jquery datatables
             </a>
         </li>
     </ul>

@@ -89,7 +89,7 @@ th .lbl:only-child,td .lbl:only-child {
 }
 .dataTables_wrapper label {
     display:inline-block;
-    font-size:13px
+    font-size:14px
 }
 .dataTables_wrapper input[type=text],.dataTables_wrapper select {
     margin-bottom:0!important;
