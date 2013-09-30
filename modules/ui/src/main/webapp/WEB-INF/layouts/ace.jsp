@@ -418,7 +418,7 @@
             <a href="form-wizard.jsp">
                 <i class="icon-double-angle-right"></i>
                 Wizard &amp; Validation
-            </a>
+              </a>
         </li>
 
         <li>
