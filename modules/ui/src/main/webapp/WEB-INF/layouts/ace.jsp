@@ -433,6 +433,18 @@
                  jquery datatables
             </a>
         </li>
+        <li>
+            <a href="messanger.jsp">
+                <i class="icon-double-angle-right"></i>
+                 bootstrap messanger
+            </a>
+        </li>
+        <li>
+            <a href="pnotify.jsp">
+                <i class="icon-double-angle-right"></i>
+                 jquery  pnotify
+            </a>
+        </li>
     </ul>
 </li>
 

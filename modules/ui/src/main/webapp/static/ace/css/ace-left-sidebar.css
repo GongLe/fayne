@@ -67,8 +67,8 @@
     padding:0 5px
 }          **/
 .sidebar {
-    width:189px;
-    position:absolute;
+    width:190px;
+    float: left;
     top:0;
     bottom:0;
     left:0;
