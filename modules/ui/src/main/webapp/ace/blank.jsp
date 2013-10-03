@@ -31,8 +31,7 @@
 							</span>
         </li>
         <li class="active">Grid</li>
-    </ul>
-    <!--.breadcrumb-->
+    </ul> <!--.breadcrumb-->
 
 </div>
 
@@ -45,16 +44,12 @@
                 bootstrap grid sizing
             </small>
         </h1>
-    </div>
-    <!--/.page-header-->
+    </div><!--/.page-header-->
 
     <div class="row-fluid">
-        <div class="span12"> </div>
-        <!--/.span12-->
-    </div>
-    <!--/.row-fluid-->
-</div>
-<!--/.page-content-->
+        <div class="span12"> </div> <!--/.span12-->
+    </div> <!--/.row-fluid-->
+</div><!--/.page-content-->
 
 </body>
 </html>

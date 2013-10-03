@@ -543,8 +543,7 @@
 
 <div class="main-content">
     <sitemesh:body></sitemesh:body>
-</div>
-<!--/.main-content-->
-</div>
+</div><!--/.main-content-->
+</div> <!--/.main-container-->
 </body>
 </html>

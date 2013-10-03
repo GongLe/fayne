@@ -59,7 +59,7 @@
                 <div class="remember">
                    <label>记住密码&nbsp;&nbsp;</label><input type="checkbox" />
                 </div>
-                <input type="submit" value="Sign me in" class="btn btn-primary">
+                <input type="submit" value="登陆" class="btn btn-primary">
             </div>
         </form>
         <div class="forget">
