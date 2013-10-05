@@ -117,6 +117,10 @@
                  <button class="demo btn btn-primary btn-large" data-toggle="modal" href="#static">View Demo</button>
              </div>
              <div id="static" class="modal hide fade" tabindex="-1" data-backdrop="static" data-keyboard="false">
+                 <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                     <h3>static</h3>
+                 </div>
                  <div class="modal-body">
                      <p>Would you like to continue with some arbitrary task?</p>
                  </div>
