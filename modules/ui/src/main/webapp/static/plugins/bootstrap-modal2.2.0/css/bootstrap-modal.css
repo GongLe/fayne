@@ -10,7 +10,12 @@
 .modal-open {
 	overflow: hidden;
 }
-
+/**cancel modal radius **/
+.modal,.modal-footer {
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+    border-radius:0;
+}
 
 /* add a scroll bar to stop page from jerking around */
 .modal-open.page-overflow .page-container,
@@ -54,7 +59,7 @@
 }
 
 .modal.fade.in {
-	top: 50%;
+	top: 30%;
 }
 
 .modal-body {

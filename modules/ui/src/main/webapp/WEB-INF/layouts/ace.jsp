@@ -445,6 +445,12 @@
                  jquery  pnotify
             </a>
         </li>
+        <li>
+            <a href="bootstrap-modal.jsp">
+                <i class="icon-double-angle-right"></i>
+                bootstrap-modal
+            </a>
+        </li>
     </ul>
 </li>
 
